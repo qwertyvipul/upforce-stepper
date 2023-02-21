@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/upforce-stepper/static/css/main.67fcdb43.css",
+    "main.js": "/upforce-stepper/static/js/main.3a00014d.js",
+    "index.html": "/upforce-stepper/index.html",
+    "main.67fcdb43.css.map": "/upforce-stepper/static/css/main.67fcdb43.css.map",
+    "main.3a00014d.js.map": "/upforce-stepper/static/js/main.3a00014d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67fcdb43.css",
+    "static/js/main.3a00014d.js"
+  ]
+}
