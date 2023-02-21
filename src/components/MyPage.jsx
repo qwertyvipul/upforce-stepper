@@ -6,8 +6,6 @@ import UserDetails from './UserDetails';
 import MyForm from './MyForm';
 import { FORM_DETAILS } from '../constants';
 
-const formDetails = FORM_DETAILS;
-
 export default function MyPage() {
     const [activeStep, setActiveStep] = React.useState(0);
     const [userData, setUserData] = React.useState({});
@@ -28,7 +26,7 @@ export default function MyPage() {
     const handleFormSubmit = () => {
         // Clicking `Next` with invalid form and then clicking `Back` and then `Next` will clear current errors
         const newErrorKeys = new Set();
-        formDetails[activeStep].formFields.forEach((field) => {
+        FORM_DETAILS[activeStep].formFields.forEach((field) => {
             if (!userData[field] || userData[field] === '') {
                 newErrorKeys.add(field);
             }
@@ -60,8 +58,8 @@ export default function MyPage() {
                         <MyForm
                             onFormSubmit={handleFormSubmit}
                             onDataChange={handleDataChange}
-                            formId={formDetails[activeStep].id}
-                            formFields={formDetails[activeStep].formFields}
+                            formId={FORM_DETAILS[activeStep].id}
+                            formFields={FORM_DETAILS[activeStep].formFields}
                             errorKeys={errorKeys}
                             userData={userData}
                         />
