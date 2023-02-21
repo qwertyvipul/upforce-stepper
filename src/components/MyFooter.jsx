@@ -14,7 +14,7 @@ export const MyFooter = React.memo(({ activeStep, onStepChange }) => {
 
     return (
         <div>
-            <Stack direction="row" spacing={2} style={{ padding: '16px ' }}>
+            <Stack direction="row" spacing={2}>
                 <Button
                     variant="contained"
                     onClick={() => onStepChange(-1)}
