@@ -46,7 +46,7 @@ export default function MyPage() {
 
     return (
         <div>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} p={2}>
                 <Grid item xs={12}>
                     <MyStepper activeStep={activeStep} />
                 </Grid>

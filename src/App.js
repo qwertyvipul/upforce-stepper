@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="App">
             <Grid display="flex" justifyContent={'center'} container>
-                <Grid item xs={8}>
+                <Grid item xl={8} md={10} xs={12}>
                     <Box sx={{ flexGrow: 1 }}>
                         <Paper variant="outlined">
                             <MyPage />

@@ -11,7 +11,7 @@ export default function MyStepper({ activeStep }) {
     return (
         <div>
             <Grid display="flex" justifyContent={'center'} container>
-                <Grid item xs={8}>
+                <Grid item xs={12}>
                     <Box sx={{ width: '100%' }}>
                         <Stepper alternativeLabel activeStep={activeStep}>
                             {steps.map((label) => (
