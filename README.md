@@ -1,3 +1,7 @@
 # Upforce Stepper
 
-[Click here](./task.pdf) to view the task.
+## Useful links:
+
+-   Problem statement: [Click here](./task.pdf)
+-   Website: https://qwertyvipul.github.io/upforce-stepper
+-   Optimization efforts: https://github.com/qwertyvipul/upforce-stepper/tree/optimize
