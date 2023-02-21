@@ -12,7 +12,11 @@ export default function UserDetails({ userData }) {
         (field) => (
             <TableRow key={field}>
                 <TableCell>{getLabelFromId(field)}</TableCell>
-                <TableCell>{userData[field]}</TableCell>
+                <TableCell>
+                    {field === 'birthday'
+                        ? userData[field].split('-').reverse().join('-')
+                        : userData[field]}
+                </TableCell>
             </TableRow>
         )
     );
