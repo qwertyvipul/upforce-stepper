@@ -40,9 +40,12 @@ export default function MyPage() {
         setErrorKeys(newErrorKeys);
     };
 
-    const handleStepChange = (step) => {
-        setActiveStep(activeStep + step);
-    };
+    const handleStepChange = React.useCallback(
+        (step) => {
+            setActiveStep(activeStep + step);
+        },
+        [activeStep]
+    );
 
     return (
         <div>
