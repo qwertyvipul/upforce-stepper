@@ -7,7 +7,7 @@ import StepLabel from '@mui/material/StepLabel';
 
 const steps = ['user information', 'address details', 'thank you'];
 
-export default function MyStepper({ activeStep }) {
+export const MyStepper = React.memo(({ activeStep }) => {
     return (
         <div>
             <Grid display="flex" justifyContent={'center'} container>
@@ -25,4 +25,6 @@ export default function MyStepper({ activeStep }) {
             </Grid>
         </div>
     );
-}
+});
+
+export default MyStepper;

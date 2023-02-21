@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { FORM_DETAILS } from '../constants';
 
-export default function MyFooter({ activeStep, onStepChange }) {
+export const MyFooter = React.memo(({ activeStep, onStepChange }) => {
     const nextButtonProps =
         activeStep === 2
             ? { disabled: true }
@@ -28,4 +28,6 @@ export default function MyFooter({ activeStep, onStepChange }) {
             </Stack>
         </div>
     );
-}
+});
+
+export default MyFooter;
